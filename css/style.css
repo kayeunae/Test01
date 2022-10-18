@@ -1,0 +1,120 @@
+@charset "uft-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 1px solid darkgrey;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.board_list th,
+.board_list td {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid darkgrey;
+}
+
+.board_list caption {
+    padding: 40px;
+}
+
+.board_list .title > a:hover {
+    text-decoration: underline;
+}
+
+.bt_wrap {
+    width: 70px;
+    height: 35px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: salmon;
+    font-size: 0;
+    line-height: 35px;
+    text-align: center;
+    float: right;
+}
+
+.bt_wrap a {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.board_page {
+    margin-top: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.board_page a {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.board_page .bt {
+    font-size: 1.3rem;
+    letter-spacing: -2px;
+}
+
+.board_page .num {
+    font-size: 1.4rem;
+}
+
+.board_page a:hover {
+    text-decoration: underline;
+}
+
+.board_page .num.on {
+    background: #000;
+    color: #fff;
+}
+
+@media all and (max-width:767px) {
+    .wrap {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .board_list th:nth-of-type(1),
+    .board_list td:nth-of-type(1) {
+        display: none;
+    }
+
+    .board_list th:nth-of-type(3),
+    .board_list td:nth-of-type(3) {
+        display: none;
+    }
+
+    .board_list th:nth-of-type(4),
+    .board_list td:nth-of-type(4) {
+        display: none;
+    }
+
+}
